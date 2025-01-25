@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* index.css or App.css */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Style du container principal */
+.stats-container {
+  padding: 20px;
+  height: 100vh; /* Optional: Full height to center vertically */
+}
+
+/* Conteneur de la grille pour les statistiques */
+.stats-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Aligns the items vertically in the center */
+  flex-wrap: wrap; /* Allows items to wrap when necessary */
+}
+
+/* Style pour chaque carte de statistique */
+.stat-card {
+  background-color: #CFFF24; /* Fond gris foncé */
+  color: white; /* Texte blanc */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  width: 200px; /* You can adjust the size here */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.stat-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.stat-card p {
+  font-size: 1rem;
+}
+
