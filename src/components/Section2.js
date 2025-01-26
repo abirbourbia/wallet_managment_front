@@ -44,7 +44,7 @@ function Section2() {
       "frequenceContributions": frequenceContributions,
     };
 
-    axios.post('http://localhost:5000/get_all_data', query_params)
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/get_all_data`, query_params)
       .then((result) => {
         if (result.data.success === 'true') {
           if (result.data.json_figures) {
